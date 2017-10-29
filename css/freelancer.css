@@ -33,36 +33,18 @@ h6 {
 
 hr.star-light,
 hr.star-primary {
-  max-width: 250px;
+  max-width: 350px;
   margin: 25px auto 30px;
   padding: 0;
   text-align: center;
   border: none;
   border-top: solid 5px; }
 
-hr.star-light:after,
-hr.star-primary:after {
-  font-family: FontAwesome;
-  font-size: 2em;
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005'; }
-
 hr.star-light {
-  border-color: white; }
-
-hr.star-light:after {
-  color: white;
-  background-color: #18BC9C; }
+  border-color: #2C3E50; }
 
 hr.star-primary {
   border-color: #2C3E50; }
-
-hr.star-primary:after {
-  color: #2C3E50;
-  background-color: white; }
 
 .img-centered {
   margin: 0 auto; }
@@ -75,7 +57,7 @@ section {
 
 section.success {
   color: white;
-  background: #18BC9C; }
+  background: #8ad1f3; }
 
 @media (max-width: 767px) {
   section {
@@ -163,19 +145,26 @@ header.masthead {
   padding-bottom: 50px;
   text-align: center;
   color: white;
-  background: #18BC9C; }
+  background: url("/img/soft_circle_scales.png"); }
   header.masthead img {
     display: block;
-    margin: 0 auto 20px; }
-  header.masthead .intro-text .name {
-    font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-    display: block;
-    text-transform: uppercase; }
-  header.masthead .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300; }
+    margin: 0 auto; }
+  header.masthead .intro-text {
+    color: #2C3E50; }
+    header.masthead .intro-text .name {
+      font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 3em;
+      font-weight: 400;
+      display: block; }
+    header.masthead .intro-text .name-sub {
+      font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 2.4em;
+      font-weight: 400;
+      display: block;
+      margin-top: -8.42105px; }
+    header.masthead .intro-text .skills {
+      font-size: 1.25em;
+      font-weight: 300; }
 
 @media (min-width: 768px) {
   header.masthead {
@@ -183,6 +172,9 @@ header.masthead {
     padding-bottom: 100px; }
     header.masthead .intro-text .name {
       font-size: 4.75em; }
+    header.masthead .intro-text .name-sub {
+      font-size: 3.8em;
+      margin-top: -20px; }
     header.masthead .intro-text .skills {
       font-size: 1.75em; } }
 

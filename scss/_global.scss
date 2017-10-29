@@ -33,39 +33,40 @@ h6 {
 
 hr.star-light,
 hr.star-primary {
-  max-width: 250px;
+  max-width: 350px;
   margin: 25px auto 30px;
   padding: 0;
   text-align: center;
   border: none;
   border-top: solid 5px;
 }
-hr.star-light:after,
-hr.star-primary:after {
-  font-family: FontAwesome;
-  font-size: 2em;
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-}
+// hr.star-light:after,
+// hr.star-primary:after {
+//   font-family: FontAwesome;
+//   font-size: 2em;
+//   position: relative;
+//   top: -.8em;
+//   display: inline-block;
+//   padding: 0 0.25em;
+//   content: '\f005';
+// }
 
 hr.star-light {
-  border-color: white;
+    border-color: $theme-primary; // white;
 }
-hr.star-light:after {
-  color: white;
-  background-color: $theme-success;
-}
+// hr.star-light:after {
+//     color: $theme-primary; // white;
+//     display: block;
+//     background-color: transparent; // white; // $theme-success;
+// }
 
 hr.star-primary {
   border-color: $theme-primary;
 }
-hr.star-primary:after {
-  color: $theme-primary;
-  background-color: white;
-}
+// hr.star-primary:after {
+//   color: $theme-primary;
+//   background-color: red; // white;
+// }
 
 .img-centered {
   margin: 0 auto;
@@ -81,7 +82,7 @@ section {
 
 section.success {
   color: white;
-  background: $theme-success;
+  background: $theme-color-3; // $theme-success;
 }
 @media(max-width:767px) {
   section {
