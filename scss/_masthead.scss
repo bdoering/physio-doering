@@ -1,0 +1,59 @@
+// Styling for the masthead
+header.masthead {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    text-align: center;
+
+    color: white;
+    background: url('/img/soft_circle_scales.png'); // white; // $theme-primary; // $theme-success;
+    img {
+	display: block;
+
+	margin: 0 auto;
+    }
+    .intro-text {
+	color: $theme-primary;
+	.name {
+	    font-family: $theme-font; 
+	    font-size: 3em;
+	    font-weight: 400;
+	    display: block;
+	    margin-top: -90px;
+
+	    // text-transform: uppercase;
+	}
+	.name-sub {
+	    font-family: $theme-font;
+	    font-size: 0.8 * 3em;
+	    font-weight: 400;
+	    display: block;
+	    margin-top: 2/4.75 * (-20px);
+	}
+	.skills {
+	    font-size: 1.25em;
+	    font-weight: 300;
+	}
+	.btn-terminreservierung {
+	    margin-top: 2em;
+	}
+    }
+}
+@media(min-width:768px) {
+    header.masthead {
+	padding-top: 200px;
+	padding-bottom: 100px;
+	.intro-text {
+	    .name {
+		font-size: 4.75em;
+	    }
+	    .name-sub {
+		font-size: 0.8 * 4.75em;
+		margin-top: -20px;
+	    }
+	    .skills {
+		font-size: 1.75em;
+	    }
+	}
+    }
+}
