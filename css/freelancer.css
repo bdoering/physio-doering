@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Dax-Medium", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -83,7 +83,7 @@ section.success {
       outline: none; }
 
 #mainNav {
-  font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Dax-Medium", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
@@ -152,13 +152,13 @@ header.masthead {
   header.masthead .intro-text {
     color: #2C3E50; }
     header.masthead .intro-text .name {
-      font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Dax-Medium", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 3em;
       font-weight: 400;
       display: block;
       margin-top: -90px; }
     header.masthead .intro-text .name-sub {
-      font-family: "Dax", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Dax-Medium", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 2.4em;
       font-weight: 400;
       display: block;
