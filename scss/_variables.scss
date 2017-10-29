@@ -1,9 +1,10 @@
 // Variables
 
 // Gray and Brand Colors for use across theme
+$theme-color-1: #bfd72e; // Green 
 
 $theme-primary: #2C3E50;
-$theme-success: #18BC9C;
+$theme-success: darken($theme-color-1, 10.0%); // #18BC9C;
 
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
@@ -13,7 +14,7 @@ $gray-light: lighten($gray-base, 46.7%);
 $gray-lighter: lighten($gray-base, 93.5%);
 
 $theme-font: 'Dax', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$theme-color-1: #bfd72e; // Green
+$theme-color-1: $theme-success;
 $theme-color-2: #eb1454; // Red
 $theme-color-3: #8ad1f3; // Blue
 $theme-color-4: #666; // Grey

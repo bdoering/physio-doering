@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Dina Döring">
 
     <title>Physio Döring am Zürisee</title>
 
@@ -23,7 +21,11 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
 	  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
 	  crossorigin=""/>
-     
+
+    <!-- Leaflet fullscreen control, see
+    https://github.com/brunob/leaflet.fullscreen -->
+    <link rel="stylesheet" href="/css/Control.FullScreen.css" />
+    
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -34,8 +36,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger"
-        href="#page-top">Physio Döring</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Physio Döring</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -43,13 +44,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Angebot</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#praxis">Praxis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger"
+              href="#aboutme">Über mich</a>
             </li>
           </ul>
         </div>
@@ -59,7 +61,7 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="img/logo-v3_200.png"
+        <img class="img-fluid" src="img/logo-v3_white_280.png"
 	     alt="Logo Physio Döring am Zürisee">
         <div class="intro-text">
           <span class="name">Physio Döring</span>
@@ -68,99 +70,150 @@
           <span class="skills">Krankengymnastik — Manuelle Therapie —
 	    Lymphdrainage — Massagen
 	  </span>
+          <div class="skills"><i>Alle Kassen und privat</i></div>
+	  <div>
+	    <a href="#" class="btn btn-lg btn-info btn-terminreservierung timify-button"
+	       data-id="59b91033231ea64300829926"
+	       role="button">
+	      <i class="fa fa-calendar"></i>
+	      Online-Terminreservierung
+            </a>
+	  </div>
+	  </span>
         </div>
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- portfolio Grid Section -->
     <section id="portfolio">
       <div class="container">
-        <h2 class="text-center">Portfolio</h2>
+        <h2 class="text-center">Angebot</h2>
         <hr class="star-primary">
-        <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container">
-        <h2 class="text-center">About</h2>
-        <hr class="star-light">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <a href="#" class="btn btn-lg btn-outline">
-              <i class="fa fa-download"></i>
-              Download Theme
-            </a>
-          </div>
-        </div>
+	<div class="row">
+	  <div class="col-lg-8 mx-auto">
+	    <p>Herzlich Willkommen!</p>
+	    <p>Ich behandele und berate Sie gerne in
+	      den <a href="#praxis">Praxisräumlichkeiten im Elfenhaus
+	      Wädenswil</a>. Die <i>ganzheitliche individuelle
+	      Behandlung</i> steht bei mir als als ausgebildete und
+	      erfahrene Physiotherapeutin im Mittelpunkt. Mit Freude
+	      und immer in enger Rücksprache mit Ihnen decke ich das
+	      komplette physiotherapeutische Behandlungsspektrum ab:
+	    </p>
+	    <ul>
+	      <li>Krankengymnastik,</li>
+	      <li>manuelle Therapie,</li>
+	      <li>Lymphdrainage,</li>
+	      <li>Massagen,</li>
+	      <li>Erarbeitung eines persönlichen Trainings- und
+		Übungsprogramms, auch für zu Hause,</li>
+	      <li>Beratung zu Training und sportartspezifischen Behandlungsmöglichkeiten,</li>
+	      <li>weitere aktive und passive Behandlungsmaßnahmen.</li>
+	    </ul>
+	    <h3>Leistungen im Einzelnen</h3>
+	    <ul>
+	      <li>allgemeine Krankengymnastik</li>
+	      <li>Manuelle Therapie</li>
+	      <li>Triggerpunktbehandlung</li>
+	      <li>komplexe Entstauungstherapie: manuelle Lymphdrainage und Bandagierung</li>
+	      <li>Fussreflexzonentherapie nach Hanne Marquardt: Sie
+	      können bei mir die Fussreflexzonentherapie privat oder
+	      als integrierte Massnahme ihrer Physiotherapieverordnung erhalten.</li>
+	      <li>propriozeptive neuromuskuläre Fazilitation (PNF)</li>
+	      <li>Funktionelle Bewegungslehre nach Klein/Vogelbach (FBL)</li>
+	      <li>Rückenschule</li>
+	      <li>Ergonomie am Arbeitsplatz</li>
+	      <li>Klassische Massage</li>
+	      <li>Sportmassage</li>
+	      <li>Kinesio Taping</li>
+	      <li>Elektrotherapie</li>
+	      <li>heisse Rolle</li>
+	      <li>Atemtherapie</li>
+	      <li>Bindegewebsmassage</li>
+	      <li>Colonmassage</li>
+	      <li>Periostbehandlung</li>
+	      <li>Rehabilitation</li>
+	    </ul>
+	    
+	    <h3>Kinder</h3>
+	    <p>Kinder sind herzlich willkommen! Als ehemalige
+	      Handballtrainerin und gelernte Spielgruppenleiterin
+	      freue ich mich, mit Ihrem Kind natürliche Bewegungen und
+	      Vertrauen in den eigenen Körper (wieder) zu
+	      erlernen. Aktive Übungen, verschiedene Geräte und
+	      Behandlungstechniken sowie eine gehörige Portion Spass
+	      runden die Behandlung ab.
+	    </p>
+	    <h3>Behandlung zu Hause</h3>
+	    <p>Eine Domizilbehandlung bei Ihnen zu Hause, im Pflege-
+	      oder Behindertenheim ist möglich. Bitte kontaktieren Sie
+	      mich!
+	    </p>
+	  </div>
+	</div>
+	
+        <!-- <div class="row"> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/cabin.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/cake.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/circus.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/game.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/safe.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="col-sm-4 portfolio-item"> -->
+        <!--     <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal"> -->
+        <!--       <div class="caption"> -->
+        <!--         <div class="caption-content"> -->
+        <!--           <i class="fa fa-search-plus fa-3x"></i> -->
+        <!--         </div> -->
+        <!--       </div> -->
+        <!--       <img class="img-fluid" src="img/portfolio/submarine.png" alt=""> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -170,80 +223,50 @@
         <h2 class="text-center">Praxis</h2>
         <hr class="star-light">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
+          <div class="col-lg-8 mx-auto">
 	    <p>Sie finden uns nur 200 m vom Bahnhof Wädenswil entfernt:</p>
 	    <p class="physio-address">Seminarzentrum Elfenhaus<br />
 	      Eintrachtstraße 7<br />
 	      8820 Wädenswil
 	    </p>
 	  </div>
-          <div class="col-lg-4 mr-auto">
-            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <a href="#" class="btn btn-lg btn-outline">
-              <i class="fa fa-download"></i>
-              Download Theme
-            </a>
-          </div>
 	  <div class="col-lg-8 mx-auto">
 	     <div id="map"></div>
-	    
 	  </div>	    
         </div>
       </div>
     </section>
       
-    
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- portfolio Grid Section -->
+    <section id="aboutme">
       <div class="container">
-        <h2 class="text-center">Contact Me</h2>
+        <h2 class="text-center">Über mich</h2>
         <hr class="star-primary">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
+	<div class="row">
+	  <div class="col-lg-4 ml-auto">
+	    <h3>Qualifikationen</h3>
+	    <p>Ich bin eine seit 2004 staatlich anerkannte
+	      Physiotherapeutin (Dipl. Physiotherapeutin SRK) mit den
+	      folgenden Qualifikationen:
+	    </p>
+	    <ul>
+	      <li>Heilpraktikerin der Physiotherapie</li>
+	      <li>Manualtherapeutin</li>
+	      <li>Lymphtherapeutin</li>
+	      <li>Fussreflexzonentherapeutin</li>
+	      <li>Dry Needling i. A.</li>
+	    </ul>
+	  </div>
+	  <div class="col-lg-4 mr-auto">
+	    <h3>Fortbildungen</h3>
+	    <p>Regelmäßige Fortbildungen stellen sicher, dass mein Wissen und 
+	      somit auch meine Therapien stets auf dem neuesten Stand sind.
+	    </p>
+	  </div>
+	</div>
       </div>
     </section>
-
+	    
     <!-- Footer -->
     <footer class="text-center">
       <div class="footer-above">
@@ -251,7 +274,8 @@
           <div class="row">
             <div class="footer-col col-md-4">
               <h3>Terminreservierung</h3>
-              <a href="#" class="btn btn-lg btn-outline timify-button" data-id="59b91033231ea64300829926">
+              <a href="#" class="btn btn-lg btn-info btn-terminreservierung timify-button"
+		 role="button" data-id="59b91033231ea64300829926">
 		<i class="fa fa-calendar"></i>
 		Online-Terminreservierung
               </a>
@@ -277,7 +301,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Your Website 2017
+              &copy; Dina Döring 2017
             </div>
           </div>
         </div>
@@ -291,7 +315,7 @@
       </a>
     </div>
 
-    <!-- Portfolio Modals -->
+    <!-- portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -576,8 +600,12 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
+    <!-- Leaflet fullscreen control, see
+    https://github.com/brunob/leaflet.fullscreen -->
+    <script type="application/javascript" src="/js/Control.FullScreen.js"></script>
+
     <!-- Leaflet map settings -->
-    <script src="js/map.js"></script>
+    <script type="application/javascript" src="js/map.js"></script>
 
     <!-- Timify reservation button -->
     <script async id="timify" type="text/javascript"
