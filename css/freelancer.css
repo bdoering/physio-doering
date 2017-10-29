@@ -485,3 +485,11 @@ footer {
   font-style: normal;
   font-weight: normal;
   src: local("Dax-MediumItalic"), url("/font/dax-mediumitalic-5872e0e8d95e8.woff") format("woff"); }
+
+#map {
+  height: 400px; }
+
+.physio-address {
+  color: #eb1454;
+  font-weight: 700;
+  padding-left: 2em; }
