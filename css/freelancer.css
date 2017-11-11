@@ -486,10 +486,12 @@ footer {
 
 .physio-address {
   color: #eb1454;
-  font-weight: 700;
-  padding-left: 2em; }
+  font-weight: 700; }
 
 .btn-terminreservierung {
   color: white;
   background-color: #eb1454;
   border-color: #eb1454; }
+
+#map {
+  margin-top: 1em; }

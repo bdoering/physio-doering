@@ -2,10 +2,12 @@
 .physio-address {
     color: $theme-color-2;
     font-weight: 700;
-    padding-left: $theme-indent;
 }
 .btn-terminreservierung {
     color: white;
     background-color: $theme-color-2;
     border-color: $theme-color-2;
+}
+#map {
+    margin-top: 1em;
 }
