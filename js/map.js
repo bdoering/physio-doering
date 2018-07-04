@@ -1,4 +1,4 @@
-var praxisLoc = [47.22774, 8.67452]
+var praxisLoc = [47.228664,8.675111];
 var mymap = L.map('map', {
   fullscreenControl: true,
   fullscreenControlOptions: {
@@ -27,5 +27,5 @@ var physioIcon = L.icon({
 
 
 L.marker(praxisLoc, {icon: physioIcon}).addTo(mymap)
-    .bindPopup("<b>Physio Döring am Zürisee</b><br />Seminarzentrum Elfenhaus<br />Eintrachtstraße 7<br />8820 Wädenswil").openPopup();
+    .bindPopup("<b>Physio Döring am Zürisee</b><br />Merkurstrasse 3<br />8820 Wädenswil").openPopup();
 
